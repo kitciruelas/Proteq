@@ -940,5 +940,16 @@ try {
             });
         </script>
     </main>
+
+    <?php if (isset($_SESSION['login_success'])): ?>
+    <div class="notification-snap-alert success">
+        <i class="bi bi-check-circle-fill"></i>
+        <?php 
+        echo htmlspecialchars($_SESSION['login_success']);
+        unset($_SESSION['login_success']);
+        ?>
+    </div>
+    <script src="../assets/js/notification-snap-alert.js"></script>
+    <?php endif; ?>
 </body>
 </html>

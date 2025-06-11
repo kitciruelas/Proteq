@@ -31,6 +31,8 @@ if (isset($_SESSION['login_success'])) {
     <link rel="stylesheet" href="../assets/css/notifications.css">
     <!-- reCAPTCHA -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- Notification Script -->
+    <script src="../assets/js/notification-snap-alert.js"></script>
     <style>
         /* Basic styles inspired by the image - consider moving to auth-styles.css */
         body {
@@ -183,8 +185,11 @@ if (isset($_SESSION['login_success'])) {
         unset($_SESSION['login_success']);
         ?>
     </div>
-    <script src="../assets/js/notification-snap-alert.js"></script>
-
+    <script>
+        setTimeout(function() {
+            window.location.href = "<?php echo $_SESSION['user_type'] === 'staff' ? '../Staff/dashboard.php' : '../User/Dashboard.php'; ?>";
+        }, 2000);
+    </script>
     <?php endif; ?>
 
     <?php if (isset($_SESSION['login_error'])): ?>

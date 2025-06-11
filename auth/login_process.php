@@ -90,7 +90,7 @@ try {
         // Verify password
         if (password_verify($password, $user['password'])) {
             // Password is correct, set session variables
-            $_SESSION['user_id'] = $user['staff_id'];
+            $_SESSION['staff_id'] = $user['staff_id'];
             $_SESSION['name'] = $user['name'];
             $_SESSION['email'] = $user['email'];
             $_SESSION['role'] = $user['role'];
@@ -98,6 +98,7 @@ try {
             $_SESSION['logged_in'] = true;
             $_SESSION['login_success'] = 'Welcome back, ' . htmlspecialchars($user['name']) . '!';
             
+            // Redirect to staff dashboard
             header('Location: ../Staff/dashboard.php');
             exit;
         }
@@ -136,7 +137,8 @@ try {
             $_SESSION['logged_in'] = true;
             $_SESSION['login_success'] = 'Welcome back, ' . htmlspecialchars($user['first_name']) . '!';
             
-            header('Location: ../User/dashboard.php');
+            // Redirect to user dashboard
+            header('Location: ../User/Dashboard.php');
             exit;
         }
     }

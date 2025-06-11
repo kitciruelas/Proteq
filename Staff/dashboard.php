@@ -1,18 +1,13 @@
 <?php
 session_start();
 
-// Check if user is not logged in
-if (!isset($_SESSION['user_id'])) {
-    // Redirect to login page
-    header("Location: ../auth/login.php");
+// Check if staff is logged in
+if (!isset($_SESSION['staff_id'])) {
+    header("Location: ../login.php");
     exit();
 }
 
-// Get staff information from session
-$staff_id = $_SESSION['user_id'];
-$staff_name = $_SESSION['name'];
-$staff_email = $_SESSION['email'];
-$staff_role = $_SESSION['role'];
+
 
 // Helper function to format coordinates with degrees
 function formatCoordinatesWithDegrees($latitude, $longitude) {
@@ -68,6 +63,8 @@ try {
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <!-- Custom Admin CSS -->
     <link rel="stylesheet" href="../assets/css/admin_css/admin-styles.css">
+    <!-- Notifications CSS -->
+    <link rel="stylesheet" href="../assets/css/notifications.css">
     <style>
         .incident-card {
             transition: all 0.3s ease;
@@ -248,6 +245,16 @@ try {
     </style>
 </head>
 <body>
+    <?php if (isset($_SESSION['login_success'])): ?>
+    <div class="notification-snap-alert success">
+        <i class="bi bi-check-circle-fill"></i>
+        <?php 
+        echo htmlspecialchars($_SESSION['login_success']);
+        unset($_SESSION['login_success']);
+        ?>
+    </div>
+    <script src="../assets/js/notification-snap-alert.js"></script>
+    <?php endif; ?>
     <div class="d-flex" id="wrapper">
         <?php include 'components/_sidebar.php'; ?>
 
@@ -571,7 +578,6 @@ try {
                                 'Content-Type': 'application/json',
                             },
                             body: JSON.stringify({
-                                staff_id: <?php echo json_encode($staff_id); ?>,
                                 latitude: latitude,
                                 longitude: longitude
                             })

@@ -3,8 +3,8 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-// Check if user is logged in and is staff
-if (!isset($_SESSION['user_id']) || !isset($_SESSION['user_type']) || $_SESSION['user_type'] !== 'staff') {
+// Check if staff is logged in
+if (!isset($_SESSION['staff_id'])) {
     echo json_encode(['success' => false, 'message' => 'Unauthorized access']);
     exit();
 }
@@ -37,12 +37,12 @@ if ($latitude < -90 || $latitude > 90 || $longitude < -180 || $longitude > 180) 
 try {
     require_once '../../includes/db.php';
     
-    $user_id = $_SESSION['user_id'];
+    $staff_id = $_SESSION['staff_id'];
     
     // First check if a record exists for this staff
     $check_query = "SELECT id FROM staff_locations WHERE staff_id = ?";
     $check_stmt = mysqli_prepare($conn, $check_query);
-    mysqli_stmt_bind_param($check_stmt, "i", $user_id);
+    mysqli_stmt_bind_param($check_stmt, "i", $staff_id);
     mysqli_stmt_execute($check_stmt);
     mysqli_stmt_store_result($check_stmt);
     
@@ -55,17 +55,17 @@ try {
             throw new Exception("Database prepare error: " . mysqli_error($conn));
         }
         
-        mysqli_stmt_bind_param($stmt, "ddi", $latitude, $longitude, $user_id);
+        mysqli_stmt_bind_param($stmt, "ddi", $latitude, $longitude, $staff_id);
     } else {
         // Insert new record if none exists
-        $query = "INSERT INTO staff_locations (staff_id, latitude, longitude, last_updates) VALUES (?, ?, ?, CURRENT_TIMESTAMP)";
+        $query = "INSERT INTO staff_locations (staff_id, latitude, longitude, last_updated) VALUES (?, ?, ?, CURRENT_TIMESTAMP)";
         $stmt = mysqli_prepare($conn, $query);
         
         if (!$stmt) {
             throw new Exception("Database prepare error: " . mysqli_error($conn));
         }
         
-        mysqli_stmt_bind_param($stmt, "idd", $user_id, $latitude, $longitude);
+        mysqli_stmt_bind_param($stmt, "idd", $staff_id, $latitude, $longitude);
     }
     
     if (!mysqli_stmt_execute($stmt)) {
