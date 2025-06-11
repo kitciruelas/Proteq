@@ -1,0 +1,60 @@
+body {
+    background-color: #f8f9fa;
+}
+.navbar {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.navbar-brand {
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+.navbar-brand i {
+    font-size: 2rem;
+    margin-right: 0.5rem;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.12); }
+    100% { transform: scale(1); }
+}
+
+
+.footer-social {
+    margin-bottom: 0.5rem;
+}
+.footer-social a {
+    color: #fff;
+    margin: 0 0.5rem;
+    font-size: 1.4rem;
+    transition: color 0.2s;
+}
+.footer-social a:hover {
+    color: #ffc107;
+}
+/* New: Quick Tips for Students */
+.student-tips {
+    background: #fffbe7;
+    border-left: 6px solid #ffc107;
+    border-radius: 1rem;
+    padding: 2rem 2rem 1.5rem 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 12px rgba(255,193,7,0.08);
+}
+.student-tips h3 {
+    color: #dc3545;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.student-tips ul {
+    margin-bottom: 0;
+}
+.student-tips li {
+    margin-bottom: 0.5rem;
+    font-size: 1.08rem;
+}
+

@@ -1,0 +1,160 @@
+body {
+    overflow: hidden; /* Prevent the main body from scrolling */
+}
+
+#wrapper {
+    display: flex;
+    /* min-height: 100vh; */ /* Remove min-height */
+    height: 100vh; /* Fix wrapper height to viewport height */
+}
+
+#sidebar-wrapper {
+    /* min-height: 100vh; */ /* Remove min-height */
+    width: 250px;
+    margin-left: -250px;
+    transition: margin .25s ease-out;
+    display: flex;
+    flex-direction: column; /* Ensure footer stays at bottom */
+    height: 100vh; /* Fix sidebar height to viewport height */
+    overflow-y: auto; /* Allow the entire sidebar to scroll if needed */
+    flex-shrink: 0; /* Prevent sidebar from shrinking */
+    background-color: #f8f9fa; /* Explicitly set background */
+    border-right: 1px solid #dee2e6; /* Ensure border is visible */
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+    width: 100%; /* Ensure links take full width */
+    /* flex-grow: 1; */ /* Remove flex-grow as the parent #sidebar-wrapper handles scroll */
+    /* overflow-y: auto; */ /* Remove overflow as the parent #sidebar-wrapper handles scroll */
+}
+
+#sidebar-wrapper .list-group-item {
+    border: none; /* Remove default borders */
+    border-radius: 0; /* Remove default radius */
+    font-weight: 500;
+}
+#sidebar-wrapper .list-group-item.active {
+    background-color: #e9ecef; /* Light grey active state */
+    color: #0d6efd; /* Bootstrap primary blue */
+    border-left: 4px solid #0d6efd;
+}
+#sidebar-wrapper .list-group-item:hover:not(.active) {
+     background-color: #f8f9fa; /* Slightly darker hover */
+}
+
+#page-content-wrapper {
+    flex: 1; /* Take remaining width */
+    min-width: 0; /* Prevent content from overflowing */
+    /* padding-top: 56px; */ /* Remove fixed padding, handle below */
+    height: 100vh; /* Fix content area height to viewport height */
+    overflow-y: auto; /* Allow the content area to scroll independently */
+    position: relative; /* Needed for sticky navbar inside */
+}
+
+/* Make the navbar inside the content area stick to the top */
+#page-content-wrapper .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1020; /* Ensure it stays above scrolled content */
+}
+
+/* Add padding to the main container-fluid to account for the sticky navbar */
+#page-content-wrapper .container-fluid {
+    padding: 1rem; /* Adjust general padding as needed */
+    /* The sticky navbar effectively creates its own top padding */
+}
+
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+/* Styles for toggled state */
+body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+    margin-left: 0;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+
+    /* #page-content-wrapper { */ /* No change needed here now */
+        /* min-width: 0; */
+        /* width: 100%; */
+    /* } */
+
+    body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+        margin-left: -250px;
+    }
+}
+
+/* Custom styles for cards and charts */
+.card {
+    border-radius: 0.5rem;
+}
+
+/* Placeholder styles */
+.bg-secondary.bg-opacity-10 {
+    min-height: 200px; /* Give placeholders some height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.375rem;
+}
+
+
+/* Add these styles to your existing admin CSS file */
+
+#sidebar-wrapper {
+    transition: width 0.3s ease;
+    /* Define default width if not already set */
+    /* width: 250px; */
+}
+
+#wrapper.sidebar-icon-only #sidebar-wrapper {
+    width: 80px; /* Adjust width for icon-only view */
+}
+
+#wrapper.sidebar-icon-only .sidebar-text {
+    display: none; /* Hide text elements */
+}
+
+#wrapper.sidebar-icon-only .sidebar-heading {
+    justify-content: center; /* Center the logo icon */
+}
+
+#wrapper.sidebar-icon-only .list-group-item {
+    text-align: center; /* Center icons in links */
+    padding-left: 0.75rem; /* Adjust padding */
+    padding-right: 0.75rem; /* Adjust padding */
+}
+
+#wrapper.sidebar-icon-only .list-group-item i {
+    margin-right: 0 !important; /* Remove margin from icons when text is hidden */
+}
+
+#wrapper.sidebar-icon-only .mt-auto .d-flex {
+    flex-direction: column; /* Stack avatar and logout */
+    align-items: center; /* Center items */
+}
+
+#wrapper.sidebar-icon-only .mt-auto .list-group-item {
+     margin-top: 0.5rem; /* Add some space */
+}
+
+/* Ensure page content adjusts */
+#page-content-wrapper {
+    transition: margin-left 0.3s ease;
+}
+
+
+/* If you were using sb-sidenav-toggled before, you might need to adjust */
+/* body.sb-sidenav-toggled #wrapper #sidebar-wrapper { ... } */
+/* body.sb-sidenav-toggled #wrapper #page-content-wrapper { ... } */

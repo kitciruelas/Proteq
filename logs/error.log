@@ -1,0 +1,680 @@
+[02-Jun-2025 02:36:59 Europe/Berlin] Starting batch email test...
+[02-Jun-2025 02:36:59 Europe/Berlin] Test data: Array
+(
+    [title] => Test Alert - Please Check Spam
+    [alert_type] => emergency
+    [description] => This is a test alert to verify email sending. Please check your spam folder if you don't see this email in your inbox.
+    [location] => Test Location
+    [radius_km] => 5
+    [recipient_name] => Test User
+    [latitude] => 14.5995
+    [longitude] => 120.9842
+)
+
+[02-Jun-2025 02:36:59 Europe/Berlin] Recipients: Array
+(
+    [0] => ciruelaskeithandrei@gmail.com
+    [1] => fking6915@gmail.com
+    [2] => andreiagasopa@gmail.com
+)
+
+[02-Jun-2025 02:37:00 Europe/Berlin] Attempting to send email to: ciruelaskeithandrei@gmail.com
+[02-Jun-2025 02:37:00 Europe/Berlin] Email configuration: Array
+(
+    [host] => smtp.gmail.com
+    [port] => 587
+    [username] => fking6915@gmail.com
+    [secure] => tls
+    [debug_level] => 3
+    [timeout] => 60
+)
+
+[02-Jun-2025 02:37:00 Europe/Berlin] PHPMailer Debug: Connection: opening to smtp.gmail.com:587, timeout=60, options=array (
+  'ssl' => 
+  array (
+    'verify_peer' => false,
+    'verify_peer_name' => false,
+    'allow_self_signed' => true,
+  ),
+)
+[02-Jun-2025 02:37:00 Europe/Berlin] PHPMailer Debug: Connection: opened
+[02-Jun-2025 02:37:01 Europe/Berlin] PHPMailer Debug: SERVER -> CLIENT: 220 smtp.gmail.com ESMTP d9443c01a7336-23506cd7618sm59614955ad.152 - gsmtp
+
+[02-Jun-2025 02:37:01 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: EHLO localhost
+
+[02-Jun-2025 02:37:01 Europe/Berlin] PHPMailer Debug: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [2001:4453:391:9500:cced:9112:dc7f:4f3f]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250 SMTPUTF8
+
+[02-Jun-2025 02:37:01 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: STARTTLS
+
+[02-Jun-2025 02:37:02 Europe/Berlin] PHPMailer Debug: SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+[02-Jun-2025 02:37:02 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: EHLO localhost
+
+[02-Jun-2025 02:37:02 Europe/Berlin] PHPMailer Debug: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [2001:4453:391:9500:cced:9112:dc7f:4f3f]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250 SMTPUTF8
+
+[02-Jun-2025 02:37:02 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: AUTH LOGIN
+
+[02-Jun-2025 02:37:02 Europe/Berlin] PHPMailer Debug: SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[02-Jun-2025 02:37:02 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: [credentials hidden]
+[02-Jun-2025 02:37:03 Europe/Berlin] PHPMailer Debug: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[02-Jun-2025 02:37:03 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: [credentials hidden]
+[02-Jun-2025 02:37:03 Europe/Berlin] PHPMailer Debug: SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[02-Jun-2025 02:37:03 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: MAIL FROM:<fking6915@gmail.com>
+
+[02-Jun-2025 02:37:03 Europe/Berlin] PHPMailer Debug: SERVER -> CLIENT: 250 2.1.0 OK d9443c01a7336-23506cd7618sm59614955ad.152 - gsmtp
+
+[02-Jun-2025 02:37:03 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: RCPT TO:<ciruelaskeithandrei@gmail.com>
+
+[02-Jun-2025 02:37:03 Europe/Berlin] PHPMailer Debug: SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-23506cd7618sm59614955ad.152 - gsmtp
+
+[02-Jun-2025 02:37:03 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: DATA
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: SERVER -> CLIENT: 354 Go ahead d9443c01a7336-23506cd7618sm59614955ad.152 - gsmtp
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: Date: Mon, 2 Jun 2025 02:37:00 +0200
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: To: Test User <ciruelaskeithandrei@gmail.com>
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: From: Proteq Alert System <fking6915@gmail.com>
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: Reply-To: Proteq Alert System <fking6915@gmail.com>
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: Subject: 
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: Message-ID: <4lG77VsQdoNjZwC29l0kOev5xmUnbqkA3jEzDKzGluo@localhost>
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: X-Mailer: PHPMailer 6.9.2 (https://github.com/PHPMailer/PHPMailer)
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: X-Priority: 1
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: X-MSMail-Priority: High
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: Importance: High
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: X-Mailer: Proteq Alert System
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: List-Unsubscribe: <mailto:fking6915@gmail.com>
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: Precedence: bulk
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: MIME-Version: 1.0
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:  boundary="b1=_4lG77VsQdoNjZwC29l0kOev5xmUnbqkA3jEzDKzGluo"
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: 
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: --b1=_4lG77VsQdoNjZwC29l0kOev5xmUnbqkA3jEzDKzGluo
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: 
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: EMERGENCY ALERT
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: 
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: This is an automated emergency alert from the university.
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: 
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: Alert Details:
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: - Type: emergency
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: - Title: Test Alert - Please Check Spam
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: - Description: This is a test alert to verify email sending. Please check your spam folder if you don't see this email in your inbox.
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: - Location: JG Plaza, 718, P. Paterno Street, 307, Quiapo, Third District, Manila, Capital District, Metro Manila, 1001, Philippines
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: - Radius: 5 km
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: - Coordinates: 14.599500, 120.984200
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: - Map: https://www.google.com/maps?q=14.5995,120.9842
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: 
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: Please take necessary precautions and follow safety protocols.
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: 
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: --b1=_4lG77VsQdoNjZwC29l0kOev5xmUnbqkA3jEzDKzGluo
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: Content-Type: text/html; charset=UTF-8
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: 
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: 
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:             <div style='font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e0e0e0; border-radius: 5px;'>
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                 <div style='background-color: #f8f9fa; padding: 20px; border-radius: 5px; margin-bottom: 20px;'>
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                     <h2 style='color: #dc3545; margin: 0;'>🚨 Emergency Alert</h2>
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                     <p style='color: #666; margin: 10px 0 0 0;'>This is an automated emergency alert from the university.</p>
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                 </div>
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                 
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                 <div style='background-color: #fff; padding: 20px; border-radius: 5px; border: 1px solid #e0e0e0;'>
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                     <h3 style='color: #333; margin-top: 0;'>Alert Details</h3>
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                     <ul style='list-style: none; padding: 0; margin: 0;'>
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                         <li style='margin-bottom: 10px;'><strong>Type:</strong> <span style='color: #dc3545;'>emergency</span></li>
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                         <li style='margin-bottom: 10px;'><strong>Title:</strong> Test Alert - Please Check Spam</li>
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                         <li style='margin-bottom: 10px;'><strong>Description:</strong> This is a test alert to verify email sending. Please check your spam folder if you don&#039;t see this email in your inbox.</li>
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                         <li style='margin-bottom: 10px;'><strong>Location:</strong> JG Plaza, 718, P. Paterno Street, 307, Quiapo, Third District, Manila, Capital District, Metro Manila, 1001, Philippines</li>
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                         <li style='margin-bottom: 10px;'><strong>Radius:</strong> 5 km</li>
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                         <li style='margin-bottom: 10px;'><strong>Coordinates:</strong> <span class='coordinates'>14.599500, 120.984200</span></li>
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                         <li style='margin-bottom: 10px;'><strong>Map:</strong> <a href='https://www.google.com/maps?q=14.5995,120.9842' class='map-link' target='_blank' style='color: #007bff; text-decoration: none;'>View on Google Maps</a></li>
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                     </ul>
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                 </div>
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                 
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                 <div style='margin-top: 20px; padding: 20px; background-color: #f8f9fa; border-radius: 5px;'>
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                     <p style='margin: 0; color: #666; font-size: 14px;'>Please take necessary precautions and follow safety protocols.</p>
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                 </div>
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:             </div>
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:         
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: 
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: 
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: --b1=_4lG77VsQdoNjZwC29l0kOev5xmUnbqkA3jEzDKzGluo--
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: 
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: .
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: SERVER -> CLIENT: 250 2.0.0 OK  1748824004 d9443c01a7336-23506cd7618sm59614955ad.152 - gsmtp
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: RSET
+
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: SERVER -> CLIENT: 250 2.1.5 Flushed d9443c01a7336-23506cd7618sm59614955ad.152 - gsmtp
+
+[02-Jun-2025 02:37:04 Europe/Berlin] Email sent successfully to: ciruelaskeithandrei@gmail.com
+[02-Jun-2025 02:37:04 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: QUIT
+
+[02-Jun-2025 02:37:05 Europe/Berlin] PHPMailer Debug: SERVER -> CLIENT: 221 2.0.0 closing connection d9443c01a7336-23506cd7618sm59614955ad.152 - gsmtp
+
+[02-Jun-2025 02:37:05 Europe/Berlin] PHPMailer Debug: Connection: closed
+[02-Jun-2025 02:37:06 Europe/Berlin] Attempting to send email to: fking6915@gmail.com
+[02-Jun-2025 02:37:06 Europe/Berlin] Email configuration: Array
+(
+    [host] => smtp.gmail.com
+    [port] => 587
+    [username] => fking6915@gmail.com
+    [secure] => tls
+    [debug_level] => 3
+    [timeout] => 60
+)
+
+[02-Jun-2025 02:37:06 Europe/Berlin] PHPMailer Debug: Connection: opening to smtp.gmail.com:587, timeout=60, options=array (
+  'ssl' => 
+  array (
+    'verify_peer' => false,
+    'verify_peer_name' => false,
+    'allow_self_signed' => true,
+  ),
+)
+[02-Jun-2025 02:37:06 Europe/Berlin] PHPMailer Debug: Connection: opened
+[02-Jun-2025 02:37:06 Europe/Berlin] PHPMailer Debug: SERVER -> CLIENT: 220 smtp.gmail.com ESMTP d9443c01a7336-23506d14abdsm60117655ad.239 - gsmtp
+
+[02-Jun-2025 02:37:06 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: EHLO localhost
+
+[02-Jun-2025 02:37:07 Europe/Berlin] PHPMailer Debug: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [2001:4453:391:9500:cced:9112:dc7f:4f3f]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250 SMTPUTF8
+
+[02-Jun-2025 02:37:07 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: STARTTLS
+
+[02-Jun-2025 02:37:07 Europe/Berlin] PHPMailer Debug: SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+[02-Jun-2025 02:37:07 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: EHLO localhost
+
+[02-Jun-2025 02:37:07 Europe/Berlin] PHPMailer Debug: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [2001:4453:391:9500:cced:9112:dc7f:4f3f]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250 SMTPUTF8
+
+[02-Jun-2025 02:37:07 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: AUTH LOGIN
+
+[02-Jun-2025 02:37:07 Europe/Berlin] PHPMailer Debug: SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[02-Jun-2025 02:37:07 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: [credentials hidden]
+[02-Jun-2025 02:37:07 Europe/Berlin] PHPMailer Debug: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[02-Jun-2025 02:37:07 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: [credentials hidden]
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: MAIL FROM:<fking6915@gmail.com>
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: SERVER -> CLIENT: 250 2.1.0 OK d9443c01a7336-23506d14abdsm60117655ad.239 - gsmtp
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: RCPT TO:<fking6915@gmail.com>
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-23506d14abdsm60117655ad.239 - gsmtp
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: DATA
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: SERVER -> CLIENT: 354 Go ahead d9443c01a7336-23506d14abdsm60117655ad.239 - gsmtp
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: Date: Mon, 2 Jun 2025 02:37:06 +0200
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: To: Test User <fking6915@gmail.com>
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: From: Proteq Alert System <fking6915@gmail.com>
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: Reply-To: Proteq Alert System <fking6915@gmail.com>
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: Subject: 
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: Message-ID: <ktXjDc8sBeLVXkp68q45OagdyrWY5Yuaj4bqaaHto@localhost>
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: X-Mailer: PHPMailer 6.9.2 (https://github.com/PHPMailer/PHPMailer)
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: X-Priority: 1
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: X-MSMail-Priority: High
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: Importance: High
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: X-Mailer: Proteq Alert System
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: List-Unsubscribe: <mailto:fking6915@gmail.com>
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: Precedence: bulk
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: MIME-Version: 1.0
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:  boundary="b1=_ktXjDc8sBeLVXkp68q45OagdyrWY5Yuaj4bqaaHto"
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: 
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: --b1=_ktXjDc8sBeLVXkp68q45OagdyrWY5Yuaj4bqaaHto
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: 
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: EMERGENCY ALERT
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: 
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: This is an automated emergency alert from the university.
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: 
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: Alert Details:
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: - Type: emergency
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: - Title: Test Alert - Please Check Spam
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: - Description: This is a test alert to verify email sending. Please check your spam folder if you don't see this email in your inbox.
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: - Location: JG Plaza, 718, P. Paterno Street, 307, Quiapo, Third District, Manila, Capital District, Metro Manila, 1001, Philippines
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: - Radius: 5 km
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: - Coordinates: 14.599500, 120.984200
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: - Map: https://www.google.com/maps?q=14.5995,120.9842
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: 
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: Please take necessary precautions and follow safety protocols.
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: 
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: --b1=_ktXjDc8sBeLVXkp68q45OagdyrWY5Yuaj4bqaaHto
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: Content-Type: text/html; charset=UTF-8
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: 
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: 
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:             <div style='font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e0e0e0; border-radius: 5px;'>
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                 <div style='background-color: #f8f9fa; padding: 20px; border-radius: 5px; margin-bottom: 20px;'>
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                     <h2 style='color: #dc3545; margin: 0;'>🚨 Emergency Alert</h2>
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                     <p style='color: #666; margin: 10px 0 0 0;'>This is an automated emergency alert from the university.</p>
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                 </div>
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                 
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                 <div style='background-color: #fff; padding: 20px; border-radius: 5px; border: 1px solid #e0e0e0;'>
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                     <h3 style='color: #333; margin-top: 0;'>Alert Details</h3>
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                     <ul style='list-style: none; padding: 0; margin: 0;'>
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                         <li style='margin-bottom: 10px;'><strong>Type:</strong> <span style='color: #dc3545;'>emergency</span></li>
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                         <li style='margin-bottom: 10px;'><strong>Title:</strong> Test Alert - Please Check Spam</li>
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                         <li style='margin-bottom: 10px;'><strong>Description:</strong> This is a test alert to verify email sending. Please check your spam folder if you don&#039;t see this email in your inbox.</li>
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                         <li style='margin-bottom: 10px;'><strong>Location:</strong> JG Plaza, 718, P. Paterno Street, 307, Quiapo, Third District, Manila, Capital District, Metro Manila, 1001, Philippines</li>
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                         <li style='margin-bottom: 10px;'><strong>Radius:</strong> 5 km</li>
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                         <li style='margin-bottom: 10px;'><strong>Coordinates:</strong> <span class='coordinates'>14.599500, 120.984200</span></li>
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                         <li style='margin-bottom: 10px;'><strong>Map:</strong> <a href='https://www.google.com/maps?q=14.5995,120.9842' class='map-link' target='_blank' style='color: #007bff; text-decoration: none;'>View on Google Maps</a></li>
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                     </ul>
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                 </div>
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                 
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                 <div style='margin-top: 20px; padding: 20px; background-color: #f8f9fa; border-radius: 5px;'>
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                     <p style='margin: 0; color: #666; font-size: 14px;'>Please take necessary precautions and follow safety protocols.</p>
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                 </div>
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:             </div>
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:         
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: 
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: 
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: --b1=_ktXjDc8sBeLVXkp68q45OagdyrWY5Yuaj4bqaaHto--
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: 
+
+[02-Jun-2025 02:37:08 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: .
+
+[02-Jun-2025 02:37:09 Europe/Berlin] PHPMailer Debug: SERVER -> CLIENT: 250 2.0.0 OK  1748824008 d9443c01a7336-23506d14abdsm60117655ad.239 - gsmtp
+
+[02-Jun-2025 02:37:09 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: RSET
+
+[02-Jun-2025 02:37:09 Europe/Berlin] PHPMailer Debug: SERVER -> CLIENT: 250 2.1.5 Flushed d9443c01a7336-23506d14abdsm60117655ad.239 - gsmtp
+
+[02-Jun-2025 02:37:09 Europe/Berlin] Email sent successfully to: fking6915@gmail.com
+[02-Jun-2025 02:37:09 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: QUIT
+
+[02-Jun-2025 02:37:09 Europe/Berlin] PHPMailer Debug: SERVER -> CLIENT: 221 2.0.0 closing connection d9443c01a7336-23506d14abdsm60117655ad.239 - gsmtp
+
+[02-Jun-2025 02:37:09 Europe/Berlin] PHPMailer Debug: Connection: closed
+[02-Jun-2025 02:37:10 Europe/Berlin] Attempting to send email to: andreiagasopa@gmail.com
+[02-Jun-2025 02:37:10 Europe/Berlin] Email configuration: Array
+(
+    [host] => smtp.gmail.com
+    [port] => 587
+    [username] => fking6915@gmail.com
+    [secure] => tls
+    [debug_level] => 3
+    [timeout] => 60
+)
+
+[02-Jun-2025 02:37:10 Europe/Berlin] PHPMailer Debug: Connection: opening to smtp.gmail.com:587, timeout=60, options=array (
+  'ssl' => 
+  array (
+    'verify_peer' => false,
+    'verify_peer_name' => false,
+    'allow_self_signed' => true,
+  ),
+)
+[02-Jun-2025 02:37:10 Europe/Berlin] PHPMailer Debug: Connection: opened
+[02-Jun-2025 02:37:11 Europe/Berlin] PHPMailer Debug: SERVER -> CLIENT: 220 smtp.gmail.com ESMTP d2e1a72fcca58-747afeadc20sm6634434b3a.67 - gsmtp
+
+[02-Jun-2025 02:37:11 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: EHLO localhost
+
+[02-Jun-2025 02:37:11 Europe/Berlin] PHPMailer Debug: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [2001:4453:391:9500:cced:9112:dc7f:4f3f]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250 SMTPUTF8
+
+[02-Jun-2025 02:37:11 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: STARTTLS
+
+[02-Jun-2025 02:37:12 Europe/Berlin] PHPMailer Debug: SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+[02-Jun-2025 02:37:12 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: EHLO localhost
+
+[02-Jun-2025 02:37:12 Europe/Berlin] PHPMailer Debug: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [2001:4453:391:9500:cced:9112:dc7f:4f3f]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250 SMTPUTF8
+
+[02-Jun-2025 02:37:12 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: AUTH LOGIN
+
+[02-Jun-2025 02:37:12 Europe/Berlin] PHPMailer Debug: SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[02-Jun-2025 02:37:12 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: [credentials hidden]
+[02-Jun-2025 02:37:12 Europe/Berlin] PHPMailer Debug: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[02-Jun-2025 02:37:12 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: [credentials hidden]
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: MAIL FROM:<fking6915@gmail.com>
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: SERVER -> CLIENT: 250 2.1.0 OK d2e1a72fcca58-747afeadc20sm6634434b3a.67 - gsmtp
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: RCPT TO:<andreiagasopa@gmail.com>
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: SERVER -> CLIENT: 250 2.1.5 OK d2e1a72fcca58-747afeadc20sm6634434b3a.67 - gsmtp
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: DATA
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: SERVER -> CLIENT: 354 Go ahead d2e1a72fcca58-747afeadc20sm6634434b3a.67 - gsmtp
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: Date: Mon, 2 Jun 2025 02:37:10 +0200
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: To: Test User <andreiagasopa@gmail.com>
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: From: Proteq Alert System <fking6915@gmail.com>
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: Reply-To: Proteq Alert System <fking6915@gmail.com>
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: Subject: 
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: Message-ID: <6wFDOQas5Mjr1lqbSvQg3SjSoB2eTKTZJFcPt5M@localhost>
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: X-Mailer: PHPMailer 6.9.2 (https://github.com/PHPMailer/PHPMailer)
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: X-Priority: 1
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: X-MSMail-Priority: High
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: Importance: High
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: X-Mailer: Proteq Alert System
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: List-Unsubscribe: <mailto:fking6915@gmail.com>
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: Precedence: bulk
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: MIME-Version: 1.0
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:  boundary="b1=_6wFDOQas5Mjr1lqbSvQg3SjSoB2eTKTZJFcPt5M"
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: 
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: --b1=_6wFDOQas5Mjr1lqbSvQg3SjSoB2eTKTZJFcPt5M
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: 
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: EMERGENCY ALERT
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: 
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: This is an automated emergency alert from the university.
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: 
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: Alert Details:
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: - Type: emergency
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: - Title: Test Alert - Please Check Spam
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: - Description: This is a test alert to verify email sending. Please check your spam folder if you don't see this email in your inbox.
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: - Location: JG Plaza, 718, P. Paterno Street, 307, Quiapo, Third District, Manila, Capital District, Metro Manila, 1001, Philippines
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: - Radius: 5 km
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: - Coordinates: 14.599500, 120.984200
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: - Map: https://www.google.com/maps?q=14.5995,120.9842
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: 
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: Please take necessary precautions and follow safety protocols.
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: 
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: --b1=_6wFDOQas5Mjr1lqbSvQg3SjSoB2eTKTZJFcPt5M
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: Content-Type: text/html; charset=UTF-8
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: 
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: 
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:             <div style='font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e0e0e0; border-radius: 5px;'>
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                 <div style='background-color: #f8f9fa; padding: 20px; border-radius: 5px; margin-bottom: 20px;'>
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                     <h2 style='color: #dc3545; margin: 0;'>🚨 Emergency Alert</h2>
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                     <p style='color: #666; margin: 10px 0 0 0;'>This is an automated emergency alert from the university.</p>
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                 </div>
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                 
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                 <div style='background-color: #fff; padding: 20px; border-radius: 5px; border: 1px solid #e0e0e0;'>
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                     <h3 style='color: #333; margin-top: 0;'>Alert Details</h3>
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                     <ul style='list-style: none; padding: 0; margin: 0;'>
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                         <li style='margin-bottom: 10px;'><strong>Type:</strong> <span style='color: #dc3545;'>emergency</span></li>
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                         <li style='margin-bottom: 10px;'><strong>Title:</strong> Test Alert - Please Check Spam</li>
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                         <li style='margin-bottom: 10px;'><strong>Description:</strong> This is a test alert to verify email sending. Please check your spam folder if you don&#039;t see this email in your inbox.</li>
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                         <li style='margin-bottom: 10px;'><strong>Location:</strong> JG Plaza, 718, P. Paterno Street, 307, Quiapo, Third District, Manila, Capital District, Metro Manila, 1001, Philippines</li>
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                         <li style='margin-bottom: 10px;'><strong>Radius:</strong> 5 km</li>
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                         <li style='margin-bottom: 10px;'><strong>Coordinates:</strong> <span class='coordinates'>14.599500, 120.984200</span></li>
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                         <li style='margin-bottom: 10px;'><strong>Map:</strong> <a href='https://www.google.com/maps?q=14.5995,120.9842' class='map-link' target='_blank' style='color: #007bff; text-decoration: none;'>View on Google Maps</a></li>
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                     </ul>
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                 </div>
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                 
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                 <div style='margin-top: 20px; padding: 20px; background-color: #f8f9fa; border-radius: 5px;'>
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                     <p style='margin: 0; color: #666; font-size: 14px;'>Please take necessary precautions and follow safety protocols.</p>
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:                 </div>
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:             </div>
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER:         
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: 
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: 
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: --b1=_6wFDOQas5Mjr1lqbSvQg3SjSoB2eTKTZJFcPt5M--
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: 
+
+[02-Jun-2025 02:37:13 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: .
+
+[02-Jun-2025 02:37:14 Europe/Berlin] PHPMailer Debug: SERVER -> CLIENT: 250 2.0.0 OK  1748824014 d2e1a72fcca58-747afeadc20sm6634434b3a.67 - gsmtp
+
+[02-Jun-2025 02:37:14 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: RSET
+
+[02-Jun-2025 02:37:14 Europe/Berlin] PHPMailer Debug: SERVER -> CLIENT: 250 2.1.5 Flushed d2e1a72fcca58-747afeadc20sm6634434b3a.67 - gsmtp
+
+[02-Jun-2025 02:37:14 Europe/Berlin] Email sent successfully to: andreiagasopa@gmail.com
+[02-Jun-2025 02:37:14 Europe/Berlin] PHPMailer Debug: CLIENT -> SERVER: QUIT
+
+[02-Jun-2025 02:37:14 Europe/Berlin] PHPMailer Debug: SERVER -> CLIENT: 221 2.0.0 closing connection d2e1a72fcca58-747afeadc20sm6634434b3a.67 - gsmtp
+
+[02-Jun-2025 02:37:14 Europe/Berlin] PHPMailer Debug: Connection: closed
